@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food & Grocery Delivery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style=" margin: 0px;">
+
+    <div style="background-color: #F7F7F7; height: 720px;">
+        <div class="header">
+            <div class="Panda-logo">
+                <a href="/" aria-label="Navigate to homepage"><span aria-label="foodpanda"><svg fill="none"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="28" height="28"
+                            data-testid="brand-icon-icon" aria-hidden="true" focusable="false" class="logo-icon">
+                            <path
+                                d="M35 0H5C2.24 0 0 2.24 0 5v30c0 2.76 2.24 5 5 5h30c2.76 0 5-2.24 5-5V5c0-2.76-2.24-5-5-5Z"
+                                fill="#ff2b85"></path>
+                            <path
+                                d="M14.58 17.53c.41-.04.71-.4.68-.81a.756.756 0 0 0-.81-.68c-.39.03-.68.35-.68.74.02.43.38.76.81.75Zm10.44-1.33c.12-.09.25-.14.4-.16.43-.02.79.32.81.75 0 .41-.33.75-.75.75s-.75-.33-.75-.75c0-.23.11-.45.29-.59Z"
+                                fill="#fff"></path>
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M33.51 14.52v-.03c-.15-.3-.1-.65.12-.9a4.983 4.983 0 0 0 .89-4.78c-.06-.19-.34-.24-.61-.29-.26-.05-.52-.09-.62-.26-.09-.15-.06-.38 0-.63.02-.07.03-.13.04-.2.05-.26.07-.51-.06-.64s-.28-.26-.42-.37l-.09-.07c-1-.74-2.23-1.1-3.47-1.03-1.08.05-2.23.41-3.06 1.14-.4.29-.92.37-1.39.22l-.07-.02c-.84-.3-1.7-.52-2.58-.66a14.28 14.28 0 0 0-6.95.66h-.05c-.45.18-.96.1-1.35-.19-1.55-1.37-4.68-1.71-6.72.01-2.23 1.88-2.36 5.17-.71 7.1.22.25.26.6.12.9-.98 2-1.5 4.2-1.51 6.43 0 7.97 6.72 13.77 15 13.77 8.28 0 15-5.8 15-13.77 0-2.22-.52-4.41-1.49-6.41 0 0 0 .02-.01.02h-.01ZM19.9 20.19c1.19 0 2.15.26 2.15.72 0 .46-.96 1.5-2.15 1.5s-2.15-1.04-2.15-1.5c0-.46.96-.72 2.15-.72ZM7.86 11.8a.578.578 0 0 1-.18-.2c-.02-.03-.04-.07-.06-.1-.36-.66-.45-1.44-.23-2.16.42-1.41 1.92-2.24 3.35-2.05.37.05.74.17 1.07.35.14.08.26.17.37.28.04.04.08.09.1.15.02.09 0 .18-.07.25-.06.06-.14.11-.22.15-1.37.8-2.49 1.95-3.52 3.14-.17.19-.35.37-.61.19Zm3.66 11.33c-1.24-.14-2.32-1.45-2.73-2.77-.18-.58-.61-3.26 1.31-5.2.64-.64 1.54-1.21 2.79-1.59.41-.1.82-.15 1.24-.15.62 0 1.36.1 1.95.53 1.24.91 1.26 2.44.52 3.23s-2.4 2.59-2.83 4.06c-.42 1.47-1.01 2.04-2.26 1.9 0 0 .01-.01.01 0v-.01Zm8.4 4.43h-.04c-2.39-.01-4.32-1.7-4.32-3.4 0-.59.26-.89.89-.73.37.09 1.89.48 3.27.48h.35c1.35 0 2.82-.37 3.24-.48h.03c.64-.16.89.14.89.72 0 1.7-1.93 3.39-4.32 3.4h.01v.01Zm11.09-7.22c-.41 1.32-1.49 2.63-2.73 2.77-1.24.14-1.83-.42-2.26-1.9-.43-1.47-2.09-3.28-2.83-4.07-.74-.78-.72-2.32.52-3.23.58-.43 1.33-.53 1.95-.53.42 0 .83.05 1.24.15 1.25.38 2.15.94 2.79 1.58 1.92 1.94 1.49 4.62 1.31 5.2 0 0 .01.03 0 .03h.01Zm1.37-8.84-.06.1a.86.86 0 0 1-.18.2c-.26.18-.44 0-.61-.19-1.03-1.19-2.15-2.34-3.52-3.14a1.07 1.07 0 0 1-.22-.15.33.33 0 0 1-.08-.25c.02-.06.05-.11.1-.15.11-.11.23-.21.37-.28.33-.18.7-.3 1.07-.35 1.43-.19 2.93.64 3.35 2.05.21.72.13 1.5-.23 2.16h.01Z"
+                                fill="#fff"></path>
+                        </svg><svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 126 27" height="22"
+                            data-testid="brand-icon-text" aria-hidden="true" focusable="false">
+                            <path
+                                d="M0 6.56h2.3V4.39C2.3 1.76 3.74 0 6.6 0l1.44.29v2.63l-1.57-.29c-.86 0-1.29.59-1.29 1.47v2.46h2.86v2.63H5.17v11.13H2.3V9.19H0V6.56Zm15.48-.29c3.73 0 7.03 2.92 7.03 7.17s-3.3 7.17-7.03 7.17c-3.73 0-7.03-2.92-7.03-7.17s3.3-7.17 7.03-7.17Zm0 11.7c2.73 0 4.16-2.04 4.16-4.54s-1.44-4.54-4.16-4.54-4.16 2.04-4.16 4.54c-.01 2.5 1.43 4.54 4.16 4.54ZM30.8 6.27c3.73 0 7.03 2.92 7.03 7.17s-3.3 7.17-7.03 7.17c-3.73 0-7.03-2.92-7.03-7.17s3.3-7.17 7.03-7.17Zm0 11.7c2.73 0 4.16-2.04 4.16-4.54s-1.44-4.54-4.16-4.54-4.16 2.04-4.16 4.54c-.01 2.5 1.43 4.54 4.16 4.54Zm22.06 2.34h-2.58L50 19.14l-.15-.15-.15.15c-.86.88-2.3 1.47-3.73 1.47-3.73 0-6.89-2.92-6.89-7.17s3.16-7.17 6.89-7.17c1.4 0 2.87.59 3.73 1.47l.15.15.15-.15V0h2.87v20.3l-.01.01ZM46.12 8.9c-2.73 0-4.19 2.04-4.19 4.54s1.46 4.54 4.19 4.54c2.44 0 4.16-2.04 4.16-4.54S48.56 8.9 46.12 8.9Zm9.62-2.35h2.58l.26 1.17.17.15.15-.15c.86-.88 2.3-1.47 3.73-1.47 3.73 0 6.89 2.92 6.89 7.17s-3.16 7.17-6.89 7.17c-1.4 0-2.87-.59-3.73-1.47l-.15-.15-.17.15v7.38h-2.84V6.55Zm6.74 11.41c2.73 0 4.16-2.04 4.16-4.54s-1.44-4.54-4.16-4.54c-2.44 0-4.16 2.04-4.16 4.54s1.72 4.54 4.16 4.54Zm14.26-6.2h2.35v-.6c0-1.65-1.11-2.42-2.64-2.42-1.24 0-2.08.6-2.53 1.84l-2.57-.55c.57-2.35 2.53-3.82 5.13-3.82 3.61 0 5.42 1.82 5.42 5.48v8.62h-2.37l-.27-1.82c-.95 1.35-2.35 2.04-4.22 2.04-2.4 0-4.18-1.45-4.18-4.21s2.35-4.55 5.89-4.55c0 0-.01-.01 0-.01h-.01Zm-1.22 6.22c.95 0 1.78-.3 2.49-.9.72-.64 1.08-1.49 1.08-2.62v-.3h-2.46c-1.73 0-2.8.83-2.8 2.14-.01.99.59 1.68 1.7 1.68h-.01Zm9.02-11.44h2.58l.28 1.17.15.15.15-.15c.58-.88 2-1.47 3.16-1.47 3.44 0 5.45 2.35 5.45 5.56v8.49h-2.87V11.8c-.09-1.87-.97-2.92-2.86-2.92-1.7 0-3.1 1.4-3.16 3.1v8.32h-2.87V6.56h-.01v-.02Zm27.39 13.76h-2.58l-.28-1.17-.15-.15-.15.15c-.86.88-2.3 1.47-3.73 1.47-3.73 0-6.89-2.92-6.89-7.17s3.16-7.17 6.89-7.17c1.4 0 2.87.59 3.73 1.47l.15.15.15-.15V0h2.86v20.31-.02.01Zm-6.74-11.41c-2.73 0-4.19 2.04-4.19 4.54s1.46 4.54 4.19 4.54c2.43 0 4.16-2.04 4.16-4.54s-1.72-4.54-4.16-4.54Zm14.9 2.87h2.35v-.6c0-1.65-1.11-2.42-2.64-2.42-1.24 0-2.08.6-2.53 1.84l-2.57-.55c.57-2.35 2.53-3.82 5.13-3.82 3.61 0 5.42 1.82 5.42 5.48v8.62h-2.37l-.27-1.82c-.95 1.35-2.35 2.04-4.22 2.04-2.4 0-4.18-1.45-4.18-4.21s2.35-4.55 5.89-4.55c0 0-.01-.01 0-.01h-.01Zm-1.22 6.22c.95 0 1.78-.3 2.48-.9.72-.64 1.08-1.49 1.08-2.62v-.3h-2.46c-1.74 0-2.8.83-2.8 2.14 0 .99.59 1.68 1.7 1.68Z"
+                                fill="#ff2b85"></path>
+                        </svg></span></a>
+            </div>
+            <div class="login">Log in</div>
+            <div class="sign-in">Sign up</div>
+
+
+
+
+            <div class="enworld"><svg aria-hidden="true" focusable="false" class="fl-none" width="24" height="24"
+                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12ZM10.6635 19.3813C9.79267 18.1369 9.11658 16.9361 8.65036 15.75H5.50337C6.58707 17.6234 8.45784 18.9845 10.6635 19.3813ZM4.84335 14.25H8.17237C7.98964 13.4966 7.89523 12.7442 7.8931 11.9853C7.891 11.2379 7.97842 10.4952 8.15242 9.75H4.84335C4.62027 10.4603 4.5 11.2161 4.5 12C4.5 12.7839 4.62027 13.5397 4.84335 14.25ZM5.50337 8.25H8.61663C9.06884 7.07159 9.72906 5.8752 10.586 4.63309C8.41405 5.04747 6.57436 6.39858 5.50337 8.25ZM18.4966 15.75C17.4415 17.574 15.6402 18.9124 13.5102 19.3479C14.3698 18.1154 15.038 16.9255 15.5 15.75H18.4966ZM19.1566 14.25H15.978C16.1608 13.4966 16.2552 12.7442 16.2573 11.9853C16.2594 11.2379 16.172 10.4952 15.998 9.75H19.1566C19.3797 10.4603 19.5 11.2161 19.5 12C19.5 12.7839 19.3797 13.5397 19.1566 14.25ZM18.4966 8.25H15.5338C15.0859 7.08283 14.4339 5.89803 13.5888 4.66862C15.6845 5.12065 17.4545 6.44847 18.4966 8.25ZM12.0752 5.12312C12.8682 6.22942 13.4764 7.26325 13.9116 8.25H10.2388C10.674 7.26325 11.2822 6.22942 12.0752 5.12312ZM9.69994 9.75H14.4504C14.6591 10.5113 14.7593 11.2505 14.7573 11.981C14.7552 12.7258 14.6467 13.4775 14.4269 14.25H9.72354C9.50364 13.4775 9.39519 12.7258 9.3931 11.981C9.39105 11.2505 9.49129 10.5113 9.69994 9.75ZM10.2783 15.75H13.8721C13.4389 16.7093 12.8428 17.7109 12.0752 18.7788C11.3076 17.7109 10.7115 16.7093 10.2783 15.75Z">
+                    </path>
+                </svg>
+                <div>
+                    EN</div>
+                <svg aria-hidden="true" focusable="false" class="fl-interaction-primary" width="24" height="24"
+                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M18.5303 9.26347C18.7966 9.52971 18.8208 9.94638 18.603 10.24L18.5304 10.3241L12.3286 16.5269C12.1728 16.6827 11.9204 16.6832 11.764 16.528L5.47165 10.2823C5.17767 9.9905 5.1759 9.51563 5.4677 9.22165C5.73297 8.95439 6.14955 8.92864 6.44397 9.1454L6.52835 9.2177L11.7602 14.4093C11.9165 14.5645 12.169 14.564 12.3248 14.4083L17.4696 9.26356C17.7359 8.99727 18.1525 8.97303 18.4462 9.19086L18.5303 9.26347Z">
+                    </path>
+                </svg>
+            </div>
+
+
+
+            <div class="cartlogo"><svg aria-hidden="true" focusable="false" class="fl-none" width="24" height="24"
+                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M12.0021 2C14.5418 2 16.4241 3.6512 16.5538 6.15854H19.8491C20.4014 6.15854 20.8491 6.60625 20.8491 7.15854C20.8491 7.20585 20.8457 7.25311 20.8391 7.29996L19.1248 19.1414C19.0544 19.6341 18.6325 20 18.1348 20H5.86942C5.37176 20 4.94984 19.6341 4.87947 19.1414L3.16518 7.29996C3.08707 6.75322 3.46697 6.24669 4.0137 6.16859C4.06055 6.16189 4.10781 6.15854 4.15513 6.15854L7.36129 6.16397C7.49108 3.65663 9.46248 2 12.0021 2ZM17.5607 16.25H6.44235C6.22143 16.25 6.04235 16.4291 6.04235 16.65C6.04235 16.669 6.04369 16.6879 6.04638 16.7067L6.25397 18.1567C6.28217 18.3537 6.45092 18.5 6.64993 18.5H17.3533C17.5523 18.5 17.7211 18.3537 17.7492 18.1566L17.9567 16.7066C17.988 16.488 17.836 16.2853 17.6174 16.254C17.5986 16.2513 17.5797 16.25 17.5607 16.25ZM18.8109 7.65854H5.19233C4.97142 7.65854 4.79233 7.83762 4.79233 8.05854C4.79233 8.32251 4.79367 8.09637 4.79635 8.11511L5.71793 14.4066C5.74609 14.6036 5.91486 14.75 6.11391 14.75H17.8891C18.0882 14.75 18.2569 14.6036 18.2851 14.4066L19.2069 8.11513C19.2381 7.89643 19.0862 7.69381 18.8675 7.66256C18.8487 7.65988 18.8298 7.65854 18.8109 7.65854ZM12.0021 3.40323C10.4163 3.40323 9.15495 4.32251 8.91234 5.80175C8.88507 5.96802 8.98943 6.12701 9.15495 6.15854C9.17377 6.16212 9.19289 6.16392 9.21204 6.1639L14.7134 6.15847C14.8772 6.15843 15.0099 6.02566 15.0099 5.86189C15.0099 5.84361 14.9631 5.82209 15.0049 5.80742C14.655 4.32251 13.5918 3.40323 12.0021 3.40323Z">
+                    </path>
+                </svg></div>
+        </div>
+
+        <div class="pandapic"><img alt="" class="bds-c-hero__image"
+                src="https://images.deliveryhero.io/image/foodpanda/homepage/refresh-hero-home-pk.png" height="600px"
+                width="960px"></div>
+
+
+
+
+
+
+
+        <div class="foodtext">
+            <h1>It's the food and groceries you love, <br> delivered</h1>
+        </div>
+
+
+
+
+
+        <div class="input">
+            <form action=""> <input type="search" placeholder="Your street and street number" size="80"
+                    style="height: 50px; outline: none; border: 0.5px solid #DCDCDC; border-radius: 5px;"></form>
+        </div>
+
+
+
+
+        <div class="location">
+
+            <svg style="color: #E21B70;" aria-hidden="true" focusable="false" width="24" height="24" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M12 2C12.4142 2 12.75 2.33579 12.75 2.75L12.7506 3.67925C12.7507 3.88008 12.8998 4.04968 13.0989 4.07562C13.1524 4.08259 13.1986 4.08909 13.2375 4.09514C16.6725 4.62856 19.3848 7.34731 19.9084 10.7855C19.9135 10.8188 19.9189 10.8575 19.9247 10.9019C19.9506 11.1011 20.1204 11.2502 20.3214 11.2502L21.25 11.25C21.6642 11.25 22 11.5858 22 12C22 12.4142 21.6642 12.75 21.25 12.75L20.3212 12.7506C20.1205 12.7507 19.951 12.8995 19.9249 13.0985C19.9211 13.1273 19.9175 13.1532 19.9141 13.1762C19.4013 16.6567 16.647 19.4078 13.1649 19.9158C13.145 19.9187 13.1228 19.9218 13.0984 19.925C12.8995 19.9511 12.7507 20.1206 12.7506 20.3213L12.75 21.25C12.75 21.6642 12.4142 22 12 22C11.5858 22 11.25 21.6642 11.25 21.25L11.2502 20.3213C11.2502 20.1203 11.1011 19.9505 10.9018 19.9246C10.8535 19.9183 10.8115 19.9124 10.7758 19.9069C7.33814 19.379 4.62167 16.6629 4.09327 13.2254C4.08776 13.1896 4.08184 13.1474 4.07552 13.0989C4.04958 12.8997 3.87997 12.7507 3.67912 12.7506L2.75 12.75C2.33579 12.75 2 12.4142 2 12C2 11.5858 2.33579 11.25 2.75 11.25L3.67818 11.2502C3.87895 11.2502 4.04865 11.1015 4.07487 10.9024C4.07777 10.8805 4.08053 10.8604 4.08317 10.8422C4.58738 7.36412 7.32923 4.61075 10.8016 4.08916C10.8307 4.08479 10.8642 4.08013 10.902 4.07519C11.1012 4.04909 11.2502 3.87936 11.2502 3.67848L11.25 2.75C11.25 2.33579 11.5858 2 12 2ZM12 5.5C8.41015 5.5 5.5 8.41015 5.5 12C5.5 15.5899 8.41015 18.5 12 18.5C15.5899 18.5 18.5 15.5899 18.5 12C18.5 8.41015 15.5899 5.5 12 5.5ZM12 8C14.2091 8 16 9.79086 16 12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8ZM12 9.5C10.6193 9.5 9.5 10.6193 9.5 12C9.5 13.3807 10.6193 14.5 12 14.5C13.3807 14.5 14.5 13.3807 14.5 12C14.5 10.6193 13.3807 9.5 12 9.5Z">
+                </path>
+            </svg>Locate me
+        </div>
+
+
+        <div class="back">..</div>
+        <div class="foodbtn">
+            <a href="" style="text-decoration: none; color: white;">
+                <p style="padding: 0px; margin: 7px;">Find food</p>
+            </a>
+        </div>
+
+
+    </div>
+
+    <div class="text2">You prepare the food, we handle the rest</div>
+
+    <div class="partners-image">
+        <img src="https://images.deliveryhero.io/image/foodpanda/home-vendor-pk.jpg?width=2000&amp;height=1280"
+            alt="banner" data-testid="banner" height="300" width="1600">
+    </div>
+
+    <div class="text3">
+        <h1 style="margin: 20px 0px 0px 25px;">List your restaurant or shop on foodpanda</h1>
+
+        <p style="margin: 30px 0px 0px 25px; font-size: 17px; ">Would you like millions of new customers to enjoy your
+            amazing food and <br> groceries? So would we!
+        </p>
+        <p style="margin: 30px 0px 0px 25px; font-size: 17px; ">It's simple: we list your menu and product lists online,
+            help you process <br> orders, pick them up, and deliver them to hungry pandas – in a heartbeat!</p>
+        <p style="margin: 30px 0px 0px 25px; font-size: 17px;">Interested? Let's start our partnership today!</p>
+        <div class="getstarted">
+            <a href="" style="text-decoration: none; color: white;">
+                <p style="padding: 0px; margin: 7px;">Get started</p>
+            </a>
+        </div>
+
+        <div class="text4">
+            Find us in these cities and many more!
+        </div>
+
+    </div>
+    <div class="pics">
+        <a href="/city/karachi" data-gtm-cta="findRestaurant_karachi"><img style="border-radius: 10px;"
+                src="https://images.deliveryhero.io/image/foodpanda/city-tile-pk/Karachi.jpg?width=720" alt="Karachi"
+                width="350"></a>
+
+        <span class="karachi">
+            <a href="" style="text-decoration: none; color: black;"> Karachi</a>
+        </span>
+
+        <a href="/city/lahore" data-gtm-cta="findRestaurant_lahore"><img style="border-radius: 10px;"
+                src="https://images.deliveryhero.io/image/foodpanda/city-tile-pk/Lahore.jpg?width=720" alt="Lahore"
+                width="350"></a>
+
+        <span class="lahore">
+            <a href="" style="text-decoration: none; color: black;">Lahore</a>
+        </span>
+
+        <a href="/city/faisalabad" data-gtm-cta="findRestaurant_faisalabad"><img style="border-radius: 10px;"
+                src="https://images.deliveryhero.io/image/foodpanda/city-tile-pk/Faisalabad.jpg?width=720"
+                alt="Faisalabad" width="350"></a>
+
+        <span class="faisalabad">
+            <a href="" style="text-decoration: none; color: black;">Faisalabad</a>
+        </span>
+
+        <a href="/city/rawalpindi" data-gtm-cta="findRestaurant_rawalpindi"><img style="border-radius: 10px;"
+                src="https://images.deliveryhero.io/image/foodpanda/city-tile-pk/Rawalpindi.jpg?width=720"
+                alt="Rawalpindi" width="350"></a>
+
+        <span class="rawalpindi">
+            <a href="">Rawalpindi</a> </span>
+
+        <a href="/city/abbottabad" data-gtm-cta="findRestaurant_abbottabad"><img style="border-radius: 10px; "
+                src="https://images.deliveryhero.io/image/fd-pk/city-tile/city-tile-Abottabad.jpg?width=720"
+                alt="Abbottabad" width="350"></a>
+
+        <span class="abbottabad">Abbottabad</span>
+
+        <a href="/city/bahawalpur" data-gtm-cta="findRestaurant_bahawalpur"><img style="border-radius: 10px;"
+                src="https://images.deliveryhero.io/image/fd-pk/city-tile/city-tile-Bahawalpur.jpg?width=720"
+                alt="Bahawalpur" width="350"></a>
+
+        <span class="bahawalpur">Bahawalpur</span>
+
+        <a href="/city/dera-ghazi-khan" data-gtm-cta="findRestaurant_dera-ghazi-khan"><img style="border-radius: 10px;"
+                src="https://images.deliveryhero.io/image/fd-pk/city-tile/city-tile-DeraGhaziKhan.jpg?width=720"
+                alt="Dera Ghazi Khan" width="350"></a>
+
+        <span class="dera-ghazi-khan">Dera Ghazi Khan</span>
+
+        <a href="/city/gujranwala" data-gtm-cta="findRestaurant_gujranwala"><img style="border-radius: 10px;"
+                src="https://images.deliveryhero.io/image/fd-pk/city-tile/city-tile-Gujranwala.jpg?width=720"
+                alt="Gujranwala" width="350"></a>
+
+        <span class="gujranwala">Gujranwala</span>
+
+        <a href="/city/gujrat" data-gtm-cta="findRestaurant_gujrat">
+            <img style="border-radius: 10px;"
+                src="https://images.deliveryhero.io/image/fd-pk/city-tile/city-tile-Gujrat.jpg.jpg?width=720"
+                alt="Gujrat" width="350" height="235">
+        </a>
+
+        <span class="gujrat"> Gujrat</span>
+
+        <a href="/city/hyderabad" data-gtm-cta="findRestaurant_hyderabad"><img style="border-radius: 10px;"
+                src="https://images.deliveryhero.io/image/foodpanda/city-tile-pk/Hyderabad.jpg?width=720"
+                alt="Hyderabad" width="350"></a>
+
+        <span class="hyderabad">Hyderabad</span>
+
+        <a href="/city/jhelum" data-gtm-cta="findRestaurant_jhelum"><img style="border-radius: 10px;"
+                src="https://images.deliveryhero.io/image/fd-pk/city-tile/city-tile-Jhelum.jpg?width=720" alt="Jhelum"
+                width="350"></a>
+
+        <span class="jhelum"> Jhelum</span>
+
+
+        <a href="/city/kamoke" data-gtm-cta="findRestaurant_kamoke"><img style="border-radius: 10px;"
+                src="https://images.deliveryhero.io/image/fd-pk/city-tile/city-tile-Kamoke.jpg?width=720" alt="Kamoke"
+                width="350"></a>
+
+        <span class="kamoke">Kamoke</span>
+
+        <a href="/city/larkana" data-gtm-cta="findRestaurant_larkana"><img style="border-radius: 10px;"
+                src="https://images.deliveryhero.io/image/fd-pk/city-tile/city-tile-Larkana.jpg?width=720" alt="Larkana"
+                width="350"></a>
+
+        <span class="larkana"> Larkana</span>
+
+        <a href="/city/mangla" data-gtm-cta="findRestaurant_mangla"><img style="border-radius: 10px;"
+                src="https://images.deliveryhero.io/image/fd-pk/city-tile/city-tile-Mangla.jpg?width=720" alt="Mangla"
+                width="350"></a>
+
+        <span class="mangla">Mangla</span>
+
+        <a href="/city/mardan" data-gtm-cta="findRestaurant_mardan"><img style="border-radius: 10px;"
+                src="https://images.deliveryhero.io/image/fd-pk/city-tile/city-tile-Mardan.jpg?width=720" alt="Mardan"
+                width="350"></a>
+
+        <span class="mardan"> Mardan</span>
+
+        <a href="/city/multan" data-gtm-cta="findRestaurant_multan"><img style="border-radius: 10px;"
+                src="https://images.deliveryhero.io/image/foodpanda/city-tile-pk/Multan.jpg?width=720" alt="Multan"
+                width="350"></a>
+
+        <span class="multan">Multan</span>
+
+        <a href="/city/murree" data-gtm-cta="findRestaurant_murree"><img style="border-radius: 10px;"
+                src="https://images.deliveryhero.io/image/fd-pk/city-tile/city-tile-Murree.jpg?width=720" alt="Murree"
+                width="350"></a>
+
+        <span class="murree">Murree</span>
+
+        <a href="/city/okara" data-gtm-cta="findRestaurant_okara"><img style="border-radius: 10px;"
+                src="https://images.deliveryhero.io/image/fd-pk/city-tile/city-tile-Okara.jpg?width=720" alt="Okara"
+                width="350"></a>
+
+        <span class="okara"> Okara</span>
+
+        <a href="/city/pano-aqil" data-gtm-cta="findRestaurant_pano-aqil"><img style="border-radius: 10px;"
+                src="https://images.deliveryhero.io/image/fd-pk/city-tile/city-tile-PanoAqil.jpg?width=720"
+                alt="Pano Aqil" width="350"></a>
+
+        <span class="pano-aqil">Pano Aqil</span>
+
+        <a href="/city/peshawar" data-gtm-cta="findRestaurant_peshawar"><img style="border-radius: 10px;"
+                src="https://images.deliveryhero.io/image/foodpanda/city-tile-pk/Peshawar.jpg?width=720" alt="Peshawar"
+                width="350"></a>
+
+        <span class="peshawar">Peshawar</span>
+
+    </div>
+ <div class="text5">
+        Put us in your pocket
+    </div>
+<div class="pinkback">
+<div class="text6">Download the food and groceries you love</div>
+<div class="text7">It's all at your fingertips – the restaurants and <br> shops you love. Find the right food and <br> groceries to suit your mood, and make the <br> first bite last. Go ahead, download us.</div>
+
+
+</div>
+<img class="phonepic" src="https://images.deliveryhero.io/image/foodpanda/home-foodpanda-apps.png?width=2000&amp;height=1590" alt="banner" data-testid="banner" width="700px">
+
+<div class="appstore">
+ <img src="Capture.PNG" alt="" height="40px">
+</div>
+
+<div class="playstore">
+    <img src="Capture 2.PNG" alt="">
+</div>
+
+<div class="aliexpress">
+    <img src="Capture 3.PNG" alt="">
+</div>
+
+
+<div class="text8">
+    Take your office out to lunch
+</div>
+
+<div class="partners-image2" >
+    <img src="https://images.deliveryhero.io/image/foodpanda/home-corporate-pk.jpg?width=2000&amp;height=1280" alt="banner" data-testid="banner" height="300px" width="1600">
+</div>
+
+
+
+
+<div class="text3">
+    <h1 style="margin: 20px 0px 0px 25px;">foodpanda for business</h1>
+
+    <p style="margin: 30px 0px 0px 25px; font-size: 17px; ">Order lunch or fuel for work-from-home, late nights in the office, corporate events, client meetings, and much more.
+    </p>
+    <p style="margin: 30px 0px 0px 25px; font-size: 17px; ">It's simple: we list your menu and product lists online,
+        help you process <br> orders, pick them up, and deliver them to hungry pandas – in a heartbeat!</p>
+    <p style="margin: 30px 0px 0px 25px; font-size: 17px;">Interested? Let's start our partnership today!</p>
+    <div class="getstarted">
+        <a href="" style="text-decoration: none; color: white;">
+            <p style="padding: 0px; margin: 7px;">Get started</p>
+        </a>
+    </div>
+</div>
+
+<div class="text9">
+    Order food and groceries online from the best restaurants and shops on <br> foodpanda
+</div>
+
+
+<div class="text10">
+    <p>Are you hungry? Did you have a long and stressful day? Interested in getting a cheesy pizza delivered to your office or looking to avoid the weekly shop? Then foodpanda <br> Pakistan is the right destination for you! foodpanda offers you a long and detailed list of the best restaurants and shops near you to help make your every day easier.</p>
+</div>
+
+<div class="text11">
+    What's new?
+</div>
+
+
+<div class="text12">
+✓ Wide variety of restaurants and shops, an abundance of cuisines & products. <br>
+✓ High quality delivery service. <br>
+✓ Live chat feature to give App users instant help when they need it. <br>
+✓ NEW: foodpanda grocery delivery! Discover the best shops, pharmacies, bakeries and more near you. <br>
+</div>
+
+<hr>
+
+<div class="text13">
+    Frequently Asked Questions
+</div>
+
+<div class="text14">
+    How can I get foodpanda delivery?
+</div>
+
+
+<div class="text15">
+    To get foodpanda delivery, simply locate the restaurants and shops near you by typing in your address, browse through a variety of restaurants and cuisines, check menus and prices, choose your dishes and add them to the basket. Now you only need to checkout and make the payment. Soon your delicious food will arrive at your doorstep!
+</div>
+
+
+<div class="text16">
+    Which takeout restaurants open now near me?
+</div>
+
+<div class="text17">
+    You can check which takeout restaurants are open now near you by simply typing your address in the location bar on foodpanda and pressing search. You will see all the available restaurants and shops that deliver to your area.
+</div>
+
+
+<div class="text18">
+    Does foodpanda deliver 24 hours?
+</div>
+
+<div class="text19">Yes, you can pay cash on delivery for foodpanda in Pakistan.</div>
+
+<div class="text20">How can I pay foodpanda online?</div>
+
+
+
+<div class="text21">You can pay online while ordering at foodpanda Pakistan by using a credit or debit card or PayPal.</div>
+
+<div class="text22">
+    Can I order foodpanda for someone else?
+</div>
+
+<div class="text23">
+    Yes, foodpanda Pakistan allows you to place an order for someone else. During checkout, just update the name and delivery address of the person you're ordering for. Please keep in mind that if the delivery details are not correct and the order cannot be delivered, we won't be able to process a refund.
+</div>
+
+<div class="text24">
+    How much does foodpanda charge for delivery?
+</div>
+
+<div class="text25">Delivery fee charged by foodpanda in Pakistan depends on many operational factors, most of all - location and the restaurant you are ordering from. You can always check the delivery fee while forming your order. Besides, you can filter the restaurants by clicking on the "Free Delivery" icon at the top of your restaurant listing.</div>
+
+
+<div class="text26">What restaurants let you order online?</div>
+
+
+
+
+<div class="text27">There are hundreds of restaurants on foodpanda Pakistan that let you order online. For example, KFC, McDonald's, Pizza Hut, OPTP, Hardee's, Domino's, Kababjees and many-many more! In order to check all the restaurants near you that deliver, just type in your address and discover all the available places.</div>
+
+<div class="text28">
+    Does foodpanda have minimum order?
+</div>
+
+<div class="text29">
+    Yes, many restaurants have a minimum order. The minimum order value depends on the restaurant you order from and is indicated during your ordering process.
+</div>
+
+
+<div class="text30">
+    What is the difference between delivery and Pick-Up?
+</div>
+
+<div class="text31">
+    If you choose delivery, a foodpanda rider will collect your order from the restaurant and take it to your chosen delivery address. If you choose Pick-Up, you can takeaway your food directly from the restaurant for extra savings – and to jump to the front of the queue. Pick-Up orders are available for restaurants only.
+</div>
+
+
+<div class="text32">
+    Order food and groceries online with foodpanda now and enjoy a great dining experience!
+</div>
+
+
+<hr>
+
+<div class="text33">
+    Laos   |   Cambodia   |   Myanmar   |   Thailand   |   Hong Kong   |   Taiwan   |   Malaysia   |   Philippines   |   Singapore   |   Bangladesh
+</div>
+
+<hr>
+
+
+<div class="text34">
+    <p>© foodpanda</p>
+
+<p>Press</p>
+<p>Help Center</p>
+<p>Refunds with pandapay</p>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
