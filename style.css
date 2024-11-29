@@ -11,7 +11,8 @@
 }
 .head{
     position: fixed;
-    width: 1600px;
+    width: 100%;
+    z-index: 100;
 }
 
 
@@ -107,7 +108,7 @@ body{
 .pandapic {
     bottom: -0px;
     padding: 0px 0px 0px 100px;
-    margin: -240px 0px 0px 680px;
+    margin: -330px 0px 0px 680px;
     position: static;
     /* right: -680px;
     top: -330px; */
@@ -120,6 +121,7 @@ body{
 
 .partner-image{
     position: relative;
+    max-width: 100%;
 }
 .okok{
     margin: 0px 0px 0px -20px;
@@ -129,7 +131,7 @@ body{
     font-size: 20px;
     color: #333333;
     
-    margin: 160px 0px 0px 140px;
+    margin: 250px 0px 0px 140px;
     font-family: Kanit;
 }
 
@@ -872,4 +874,9 @@ hr{
 
 .static{
     position: static;
+}
+
+.head1{
+    max-width: 100%;
+    margin: 0px auto;
 }
